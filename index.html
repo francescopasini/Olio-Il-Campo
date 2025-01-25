@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olio IL CAMPO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,100,100&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<!--     <section class="hero">
+        <img src="imgs/campo.JPG" alt="Campo di ulivi">
+        <div class="hero-content">
+            <h1>Scopri I Nostri Oli</h1>
+        </div>
+    </section> -->
+
+    <section class="hero">
+        <img id="logo" src="imgs/logo.png" alt="Logo">
+    </section>
+
+    <script>
+      function updateLogo() {
+        var logo = document.getElementById('logo');
+        if (window.innerWidth <= 600) {
+          logo.src = 'imgs/logo-small.JPG';
+        } else {
+          logo.src = 'imgs/logo.png';
+        }
+      }
+
+      window.addEventListener('resize', updateLogo);
+      window.addEventListener('load', updateLogo);
+    </script>
+
+    <section class="bg-fade">
+    </section>
+
+    <section class="seasonal-picks">
+        <h2>I nostri oli</h2>
+        <div class="picks-grid">
+            <div class="pick-item">
+                <img src="imgs/bottiglia.PNG" alt="Olio d'Oliva al Basilico">
+                <h3>Olio d'Oliva 1</h3>
+            </div>
+            <div class="pick-item">
+                <img src="imgs/bottiglia.PNG" alt="Olio d'Oliva al Peperoncino">
+                <h3>Olio d'Oliva 2</h3>
+            </div>
+            <div class="pick-item">
+                <img src="imgs/bottiglia.PNG" alt="Olio d'Oliva Premium">
+                <h3>Olio d'Oliva 3</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-story">
+        <h2>La Nostra Storia</h2>
+        <div class="story-content">
+            <div class="story-text">
+              <h3>Tradizione e qualità</h3>
+                <p>Il nostro olio extravergine di oliva nasce a Toscolano Maderno, sulle rive del Lago di Garda, dove la nostra famiglia coltiva con passione gli uliveti "Il Campo", il terreno che apparteneva ai nostri nonni e che oggi curiamo con amore. Ogni bottiglia racchiude il sapore autentico della nostra terra.</p>
+            </div>
+            <div class="story-image">
+                <img src="imgs/campo.JPG" alt="Olio IL CAMPO">
+            </div>
+        </div>
+    </section>
+
+    <section class="follow-us">
+        <h2>Contattaci</h2>
+        <div class="follow-grid">
+            <img src="imgs/albero.JPG" alt="Segui 1">
+            <img src="imgs/bicchiere.JPG" alt="Segui 2">
+            <img src="imgs/erba.JPG" alt="Segui 3">
+            <img src="imgs/lago.JPG" alt="Segui 4">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Olio Il Campo</h3>
+            <div class="footer-section">
+                <p>+39 338 6163057</p>
+                <p>pasini.vito@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <p>Toscolano Maderno (BS)</p>
+                <p>Lago di Garda, Italia</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
