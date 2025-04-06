@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti - Oro di Stina</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400&family=Nunito+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="overlay"></div>
+    
+    <header class="main-header">
+        <div class="burger-menu">
+            <div class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Chi Siamo</a></li>
+            <li><a href="products.html">I Nostri Oli</a></li>
+            <li><a href="territory.html">Territorio</a></li>
+            <li><a href="contact.html" class="active">Contatti</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-header">
+        <h1>Contatti</h1>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Invia un messaggio</h2>
+                    <p>Siamo sempre disponibili per rispondere alle vostre domande e per accogliere le vostre richieste.</p>
+                    <div class="contact-details">
+                        <div class="address-block">
+                            <h3>Indirizzo</h3>
+                            <p>Via Grotten Stina 4</p>
+                            <p>Toscolano Maderno (BS) 25088</p>
+                            <p>Lago di Garda, Italia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Messaggio</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Invia Messaggio</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Oro di Stina</h3>
+            <div class="footer-section">
+                <p>Toscolano Maderno (BS)</p>
+                <p>Lago di Garda, Italia</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

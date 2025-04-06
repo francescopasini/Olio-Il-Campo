@@ -3,92 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olio IL CAMPO</title>
+    <title>Oro di Stina</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,100,100&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400&family=Nunito+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
 </head>
 <body>
-
-<!--     <section class="hero">
-        <img src="imgs/campo.JPG" alt="Campo di ulivi">
-        <div class="hero-content">
-            <h1>Scopri I Nostri Oli</h1>
+    <div class="overlay"></div>
+    
+    <header class="main-header">
+        <div class="burger-menu">
+            <div class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </section> -->
+    </header>
+    
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">Chi Siamo</a></li>
+            <li><a href="products.html">I Nostri Oli</a></li>
+            <li><a href="territory.html">Territorio</a></li>
+            <li><a href="contact.html">Contatti</a></li>
+        </ul>
+    </nav>
 
     <section class="hero">
-        <img id="logo" src="imgs/logo.png" alt="Logo">
-    </section>
-
-    <script>
-      function updateLogo() {
-        var logo = document.getElementById('logo');
-        if (window.innerWidth <= 600) {
-          logo.src = 'imgs/logo-small.jpg';
-        } else {
-          logo.src = 'imgs/logo.png';
-        }
-      }
-
-      window.addEventListener('resize', updateLogo);
-      window.addEventListener('load', updateLogo);
-    </script>
-
-    <section class="bg-fade">
-    </section>
-
-    <section class="seasonal-picks">
-        <h2>I nostri oli</h2>
-        <div class="picks-grid">
-            <div class="pick-item">
-                <img src="imgs/bottiglia.png" alt="Olio d'Oliva 1">
-                <h3>Olio d'Oliva 1</h3>
-            </div>
-            <div class="pick-item">
-                <img src="imgs/bottiglia.png" alt="Olio d'Oliva 2">
-                <h3>Olio d'Oliva 2</h3>
-            </div>
-            <div class="pick-item">
-                <img src="imgs/bottiglia.png" alt="Olio d'Oliva 3">
-                <h3>Olio d'Oliva 3</h3>
+        <div class="hero-image">
+            <img src="imgs/bicchiere.JPG" alt="Campo di ulivi">
+        </div>
+        <div class="hero-brand">
+            <div class="hero-content">
+                <h1>Oro di Stina</h1>
+                <p>Olio extravergine di oliva 100% italiano del Lago di Garda</p>
             </div>
         </div>
     </section>
 
-    <section class="our-story">
-        <h2>La Nostra Storia</h2>
-        <div class="story-content">
-            <div class="story-text">
-              <h3>Tradizione e qualità</h3>
-                <p>Il nostro olio extravergine di oliva nasce a Toscolano Maderno, sulle rive del Lago di Garda, dove la nostra famiglia coltiva con passione gli uliveti "Il Campo", il terreno che apparteneva ai nostri nonni e che oggi curiamo con amore. Ogni bottiglia racchiude il sapore autentico della nostra terra.</p>
+    <div class="main-content">
+        <section class="intro">
+            <div class="intro-content">
+                <h2>Da oltre 100 anni produciamo olio extravergine di oliva di alta qualità nella zona di Toscolano Maderno, sulle rive del Lago di Garda.</h2>
+                <p>La nostra passione per l'olivicoltura e il rispetto per il territorio ci guidano nella produzione di un olio che racchiude l'essenza del nostro territorio. Ogni bottiglia racconta una storia di tradizione, qualità e amore per la terra.</p>
+                <div class="intro-buttons">
+                    <a href="products.html" class="btn">Scopri i nostri oli</a>
+                    <a href="territory.html" class="btn btn-outline">Il nostro territorio</a>
+                </div>
             </div>
-            <div class="story-image">
-                <img src="imgs/campo.JPG" alt="Olio IL CAMPO">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="follow-us">
-        <h2>Contattaci</h2>
-        <div class="follow-grid">
-            <img src="imgs/albero.JPG" alt="Segui 1">
-            <img src="imgs/bicchiere.JPG" alt="Segui 2">
-            <img src="imgs/erba.JPG" alt="Segui 3">
-            <img src="imgs/lago.JPG" alt="Segui 4">
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <h3>Olio Il Campo</h3>
-            <div class="footer-section">
-                <p>Toscolano Maderno (BS)</p>
-                <p>Lago di Garda, Italia</p>
+        <section class="featured">
+            <div class="container">
+                <div class="featured-content">
+                    <h2>I Nostri Oli</h2>
+                    <div class="featured-grid">
+                        <div class="featured-item">
+                            <img src="imgs/bottiglia.png" alt="Il Bordò - Olio Extravergine di Oliva">
+                            <h3>Il Bordò</h3>
+                            <p>Un monocultivar pregiato dalle olive Casaliva dell'Alto Garda, dal fruttato medio-intenso con note di erba tagliata e mandorla verde.</p>
+                            <a href="products.html#il-bordo-detail" class="btn">Scopri di più</a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="imgs/bottiglia.png" alt="Le Sigale - Olio Extravergine di Oliva">
+                            <h3>Le Sigale</h3>
+                            <p>Un monocultivar delicato e armonioso dalle olive Leccino, con note di mandorla, erba fresca e un sentore di pomodoro verde.</p>
+                            <a href="products.html#le-sigale-detail" class="btn">Scopri di più</a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="imgs/bottiglia.png" alt="Il Riolet - Olio Extravergine di Oliva">
+                            <h3>Il Riolet</h3>
+                            <p>Un monocultivar raro e pregiato dalle olive Gargnà, con note distintive di erba fresca, mandorla verde e carciofo.</p>
+                            <a href="products.html#il-riolet-detail" class="btn">Scopri di più</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <h3>Oro di Stina</h3>
+                <div class="footer-section">
+                    <p>Toscolano Maderno (BS)</p>
+                    <p>Lago di Garda, Italia</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
